@@ -173,7 +173,6 @@ pub fn objects_from_json_value(json: serde_json::Value) -> Vec<crate::Object> {
 }
 
 /// Macro used to generate documents, with the same syntax as `serde_json::json`
-#[cfg(test)]
 macro_rules! documents {
     ($data:tt) => {{
         let documents = serde_json::json!($data);
